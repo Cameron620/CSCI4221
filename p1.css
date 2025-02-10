@@ -3,4 +3,48 @@ header{
     font-size: 36px;
     color: white;
     background-color: lightgrey;
+    margin-top: 50px; /* -bottom, -left, -right */
+    padding-top: 50px; /* -bottom, -left, -right */
+    /*border-bottom: 2px double gold;
+    width: 80%;
+    height: 50px;*/
+    margin-bottom: 0;
 }
+ nav{
+    /*border: 1px dotted blue;*/
+    background-color: lightgrey;
+    margin-top: 0;
+    padding-top: 0;
+
+ }
+ nav ul{
+
+    /*border: 2px solid green;*/
+    margin-top: 0;
+    margin-left: 0;
+    padding-left: 0;
+
+ }
+ nav ul li{
+    /*border: 1px dotted yellow;*/
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    background-color: gold;
+    box-shadow: inset;
+ }
+ main{
+   display: inline;
+ }
+ main aside{
+   width: 30%;
+   display: inline-block;
+   border: 1px solid yellow;
+ }
+ main article{
+   width: 68%;
+   display: inline-block;
+   border: 1px solid blue;
+
+ }
+ 
