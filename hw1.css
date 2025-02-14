@@ -1,5 +1,5 @@
 header{
-    background-color: #666;
+    background-color: blue;
     padding: 30px;
     text-align: center;
     font-size: 35px;
@@ -12,24 +12,29 @@ width: 100%;
 }
 main aside{
     width: 30%;
-    background: #ccc;
+    background: darkgray;
     padding: 20px;
     display: table-cell;
 }
-main article{
-    padding: 20px;
-    width: 78%;
-    background-color: #f1f1f1;
-    display: table-cell;
-}
+
 main aside ul{
     list-style-type: none;
     padding: 0;
 }
-
+main aside ul li{
+    background-color: blue;
+    margin-bottom: 5px;
+    border-top: black;
+}
+main article{
+    padding: 20px;
+    width: 78%;
+    background-color: lightgrey;
+    display: table-cell;
+}
 
 footer{
-    background-color: #777;
+    background-color: blue;
     padding: 10px;
     text-align: center;
     color: white;
