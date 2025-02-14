@@ -1,5 +1,5 @@
 header{
-    background-color: blue;
+    background-color: steelblue;
     padding: 30px;
     text-align: center;
     font-size: 35px;
@@ -12,7 +12,7 @@ width: 100%;
 }
 main aside{
     width: 30%;
-    background: darkgray;
+    background: slategrey;
     padding: 20px;
     display: table-cell;
 }
@@ -22,19 +22,19 @@ main aside ul{
     padding: 0;
 }
 main aside ul li{
-    background-color: blue;
     margin-bottom: 5px;
     border-top: black;
 }
 main article{
+    border-color: 1px black;
     padding: 20px;
     width: 78%;
-    background-color: lightgrey;
+    background-color: white;
     display: table-cell;
 }
 
 footer{
-    background-color: blue;
+    background-color: steelblue;
     padding: 10px;
     text-align: center;
     color: white;
