@@ -1,0 +1,36 @@
+header{
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+main{
+display:inline-block;
+display: table;
+width: 100%;
+}
+main aside{
+    width: 30%;
+    background: #ccc;
+    padding: 20px;
+    display: table-cell;
+}
+main article{
+    padding: 20px;
+    width: 78%;
+    background-color: #f1f1f1;
+    display: table-cell;
+}
+main aside ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+
+footer{
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
