@@ -63,18 +63,39 @@ header{
   border-top: blue;
  }
  .wdd{
-  border: ipx solid green;
+  border: 1px solid green;
+ }
+ c2{
+  font-size: 24px;
  }
  .article_img{
   width: 1000px;
   height: 1000px;
  }
  footer{
-  text-align: center;
   font-size: 36px;
-  color: white;
-  background-color: blue;
-  padding-top: 20px;
   padding-bottom: 20px;
  }
+ header, footer{
+  text-align: center;
+  color: white;
+  background-color: lightgrey;
+  padding-bottom: 20px;
+ }
+
+ .text_style{
+  text-align: left;
+  direction: ltr;
+  unicode-bidi: bidi-override;
+  vertical-align: top;
+  text-decoration-line: overline;
+  text-decoration-style: dotted;
+  text-decoration-color: red;
+  text-transform: uppercase;
+  text-indent: 50px;
+  letter-spacing: 5px;
+  line-height: 0.8;
+  word-spacing: 40px (or normal);
+}
+
  
