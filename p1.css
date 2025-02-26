@@ -110,3 +110,21 @@ header{
 .paragraph_style{
   font-family: verdana;
 }
+#div1{
+ display: flex;
+ position: relative;
+ border: 1px solid green;
+}
+#div1 aside{
+  border: 1px solid blue;
+}
+#div1 article{
+  position: relative;
+  left: 200px;
+  border: 1px solid yellow;
+}
+#pdemo{
+  position: sticky;
+  right: 0px;
+  bottom: 0px;
+}
