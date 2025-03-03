@@ -1,8 +1,11 @@
-header{
-    text-align: center;
+*{
+  box-sizing: border-box;
+}
+body{
+  counter-reset: my-counter;
+}
+  header{
     font-size: 36px;
-    color: white;
-    background-color: lightgrey;
     margin-top: 50px; /* -bottom, -left, -right */
     padding-top: 50px; /* -bottom, -left, -right */
     /*border-bottom: 2px double gold;
@@ -31,16 +34,30 @@ header{
     width: 100px;
     height: 30px;
     background-color: gold;
-    box-shadow: inset;
+    box-shadow: 10px 0px 5px red;
+    text-shadow: 0px 0px 5px green;
  }
+.dropdown {
+    position: relative;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    padding: 12px 16px;
+    z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
  main{
+  width: 100%;
   border: 1px solid green;
-  display: inline-block;
   display: table;
 
  }
  main aside{
-   width: 40%;
+   width: 30%;
    border: 1px solid yellow;
    display: table-cell
  }
@@ -74,6 +91,10 @@ header{
  }
  footer{
   font-size: 36px;
+  position: fixed;
+  bottom: 0;
+  left:0;
+  right: 0;
   padding-bottom: 20px;
  }
  header, footer{
@@ -122,9 +143,47 @@ header{
   position: relative;
   left: 200px;
   border: 1px solid yellow;
+  height: 100px;
+  overflow: scroll;
 }
 #pdemo{
   position: sticky;
   right: 0px;
   bottom: 0px;
+}
+
+div.gallery{
+  display: inline-block;
+  width: 180px;
+}
+div.gallery img{
+  width: 100%;
+  height: auto;
+}
+div.desc{
+  text-align: center;
+}
+div.gallery h3::before{
+  counter-increment: my-counter+1;
+  content: "Picture-" counter(my-counter) ": ";
+}
+.flex_c{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-flow: flex-direction;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-end;
+}
+.flex_item{
+flex-basis: 200px;
+}
+.flex_item img{
+  width: 100%;
+  height: auto;
+}
+.flex_item1{
+  border: 1px solid green;
+  height: 300px;
 }
