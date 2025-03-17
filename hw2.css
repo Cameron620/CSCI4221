@@ -1,0 +1,115 @@
+
+header{
+    background-color: orangered;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+body {
+    counter-reset: my-counter my-counterz;
+}
+main{
+display:inline-block;
+display: table;
+width: 100%;
+}
+
+footer{
+    background-color: orangered;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+.flex-c{
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    justify-content: flex-start; 
+    align-items: stretch; 
+    align-content: stretch; 
+    flex-wrap: nowrap;
+    overflow: scroll;
+}
+
+.flex-item {
+    flex: flex-start;
+    align-self: stretch;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 200px; 
+    margin: 10px;
+}
+
+.flex-item img {
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.5);
+    width: 100%;
+    height: auto;
+}
+.flex-item::before {
+    counter-increment: my-counter+1;
+    content: "Picture-" counter(my-counter) ": ";
+    font-weight: bold;
+}
+
+.grid-c {
+    display: grid;
+    grid-template-columns: auto auto auto; 
+    grid-column-gap: 10px;
+    grid-auto-rows: 200px; 
+    align-content: start; 
+    overflow: scroll; 
+}
+.grid-item img {
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 
+        4px 4px 8px 0 rgb(12, 11, 11),
+        4px 6px 20px 0 rgb(200, 236, 200);
+    width: 100%;
+    height: auto;
+}
+.grid-item::before {
+    counter-increment: my-counterz;
+    content: "Picture-" counter(my-counterz) ": ";
+    font-weight: bold;
+}
+.Car-Menu {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+}
+.Car-Menu .Menu {
+    display: none;
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    z-index: 1;
+}
+.Car-Menu:hover .Menu {
+    display: block;
+}
+.Car-Menu .Menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.Car-Menu .Menu li {
+    padding: 8px 12px;
+    text-align: left;
+}
+
+.Car-Menu .Menu li:hover {
+    background-color: #ddd; /* Highlight the list item on hover */
+}
+
+
