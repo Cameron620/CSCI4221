@@ -56,21 +56,36 @@ footer{
 
 .grid-c {
     display: grid;
-    grid-template-columns: auto auto auto; 
-    grid-column-gap: 10px;
-    grid-auto-rows: 200px; 
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    grid-gap: 10px;
+    grid-auto-rows: 1fr; 
     align-content: start; 
-    overflow: scroll; 
+    overflow: auto; 
+    align-items: start;
 }
-.grid-item img {
-    border: 2px solid black;
+
+.grid-item {
+    display: block;
     border-radius: 10px;
-    box-shadow: 
-        4px 4px 8px 0 rgb(12, 11, 11),
-        4px 6px 20px 0 rgb(200, 236, 200);
     width: 100%;
     height: auto;
+    margin: 0; 
+    overflow: hidden;
+    position: relative; 
 }
+
+.grid-item img {
+    width: 100%; /* Ensures the image fits the grid item's width */
+    height: 200px; /* Fixed height for uniformity */
+    object-fit: cover; /* Crops the image to maintain aspect ratio while filling the grid item */
+    border: 2px solid black; /* Optional: Adds a border */
+    border-radius: 10px; /* Matches the grid item's rounded corners */
+    box-shadow: 
+        4px 4px 8px 0 rgb(12, 11, 11),
+        4px 6px 20px 0 rgb(200, 236, 200); /* Optional: Depth effect */
+}
+
+
 .grid-item::before {
     counter-increment: my-counterz;
     content: "Picture-" counter(my-counterz) ": ";
