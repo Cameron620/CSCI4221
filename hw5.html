@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Cars</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: white;
+        }
+
+        header {
+            background: #333;
+            color: #ff5733;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #ff5733;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #fff;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .car {
+            background: #2e2e2e;
+            border: 2px solid #444;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 15px;
+            width: 30%;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+        }
+
+        .car:hover {
+            transform: scale(1.05);
+            border-color: #ff5733;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+            border: 2px solid #444; /* Dark gray border added */
+        }
+
+        h2 {
+            color: #ff5733;
+        }
+
+        .specs {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        table {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: #2e2e2e;
+        }
+
+        th, td {
+            border: 1px solid #444;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #333;
+            color: #ff5733;
+        }
+
+        td {
+            background-color: #1a1a1a;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .car {
+                width: 100%;
+                margin: 10px 0;
+            }
+
+            table {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Super Cars</h1>
+        <nav>
+            <a href="#ford-gt">Ford GT</a>
+            <a href="#ferrari">Ferrari</a>
+            <a href="#lamborghini">Lamborghini</a>
+            <a href="#porsche">Porsche</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="car" id="ford-gt">
+            <img src="ford_gt.jpg" alt="Ford GT">
+            <h2>Ford GT</h2>
+            <ul class="specs">
+                <li>Top Speed: 216 mph</li>
+                <li>Horsepower: 660 hp</li>
+                <li>Price: $500,000</li>
+            </ul>
+            <p>The Ford GT is a high-performance supercar with a striking design and impressive aerodynamics.</p>
+        </div>
+
+        <div class="car" id="ferrari">
+            <img src="ferrari.jpg" alt="Ferrari 488 GTB">
+            <h2>Ferrari 488 GTB</h2>
+            <ul class="specs">
+                <li>Top Speed: 205 mph</li>
+                <li>Horsepower: 661 hp</li>
+                <li>Price: $250,000</li>
+            </ul>
+            <p>The Ferrari 488 GTB combines luxury with performance, offering a thrilling driving experience.</p>
+        </div>
+
+        <div class="car" id="lamborghini">
+            <img src="lamborghini.jpg" alt="Lamborghini Huracán">
+            <h2>Lamborghini Huracán</h2>
+            <ul class="specs">
+                <li>Top Speed: 202 mph</li>
+                <li>Horsepower: 630 hp</li>
+                <li>Price: $210,000</li>
+            </ul>
+            <p>The Lamborghini Huracán is known for its aggressive styling and exhilarating performance.</p>
+        </div>
+
+        <div class="car" id="porsche">
+            <img src="porsche_911_gt3.jpg" alt="Porsche 911 GT3">
+            <h2>Porsche 911 GT3</h2>
+            <ul class="specs">
+                <li>Top Speed: 197 mph</li>
+                <li>Horsepower: 502 hp</li>
+                <li>Price: $160,000</li>
+            </ul>
+            <p>The Porsche 911 GT3 is a track-focused version of the iconic 911, renowned for its precision and agility.</p>
+        </div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Car Model</th>
+                <th>Top Speed</th>
+                <th>Horsepower</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ford GT</td>
+                <td>216 mph</td>
+                <td>660 hp</td>
+                <td>$500,000</td>
+            </tr>
+            <tr>
+                <td>Ferrari 488 GTB</td>
+                <td>205 mph</td>
+                <td>661 hp</td>
+                <td>$250,000</td>
+            </tr>
+            <tr>
+                <td>Lamborghini Huracán</td>
+                <td>202 mph</td>
+                <td>630 hp</td>
+                <td>$210,000</td>
+            </tr>
+            <tr>
+                <td>Porsche 911 GT3</td>
+                <td>197 mph</td>
+                <td>502 hp</td>
+                <td>$160,000</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <footer>
+        <p>&copy; 2025 Super Cars Comparison</p>
+    </footer>
+</body>
+
+</html>
