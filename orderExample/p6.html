@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Homework 6</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="mjs.js"></script>
+
+  <style>
+    .food{
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+
+
+</head>
+
+
+
+<body>
+
+<div class="jumbotron text-center">
+  <p class="display-4">Welcome to my webpage</p> 
+  <div class="text-left fs-6">
+    <button id="menu1" class="btn btn-primary">Meals </button>
+    
+    <button id="menu2" class="btn btn-primary">Drinks </button>
+  </div>
+</div>
+
+<hr>  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3">
+      <h3>Your order</h3>
+      <form name="myForm" action=""  onsubmit="return validateForm()" method="post">
+        <div class="form-check">
+          <label class="form-check-label" for="check1">
+            <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">Fries
+          </label>
+
+          <div class="form-check">
+            <label class="form-check-label" for="check1_radio1">
+              <input type="radio" class="form-check-input" id="check1_radio1" name="optradio" value="1">Small
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label" for="check1_radio2">
+              <input type="radio" class="form-check-input" id="check1_radio2" name="optradio" value="2">Median
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label" for="check1_radio3">
+              <input type="radio" class="form-check-input" id="check1_radio3" name="optradio" value="3">Large
+            </label>
+          </div>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label" for="check2">
+            <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">Burgers
+          </label>
+          <div class="form-group">
+            <label for="sel1">Select size:</label>
+            <select class="form-control" id="sell" name="burgerSize">
+                <option value="1">Small</option>
+                <option value="2">Median</option>
+                <option value="3">Large</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label" for="check3">
+            <input type="checkbox" class="form-check-input"  id="check3" name="option3" value="something">Nuggets
+          </label>
+        </div>
+
+        <div class="form-check">
+            <label class="form-check-label"  for="check2">
+              <input type="checkbox" class="form-check-input"  id="check4" name="option4" value="something">Salads
+            </label>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form> 
+
+
+
+    </div>
+    <div class="col-sm-9">
+      <div class="row">
+          <div class="col-sm-4" id="fry_3"> 
+            <img src = "largeFry.jpg" class="food">
+            <p>Description: calories = 1000</p>
+            <p>Recommdaion: not for kids</p>
+            <p>Price: $6.00</p>
+          </div>
+
+          <div class="col-sm-4" id="fry_2">
+            <img src = "mediumFry.jpg" class="food">
+            <p>Description: calories = 700</p>
+            <p>Recommdaion: not for kids less than 10 years</p>
+            <p>Price: $4.00</p>
+          </div>
+
+          <div class="col-sm-4"  id="fry_1">
+            <img src = "smallFry.jpg" class="food">
+            <p>Description: calories = 400</p>
+            <p>Recommdaion: good for kids</p>
+            <p>Price: $2.00</p>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-sm-4" id="burger_3"> 
+            <img src = "largeBurger.jpg" class="food">
+            <p>Description: calories = 2000</p>
+            <p>Recommdaion: not for kids</p>
+            <p>Price: $7.00</p>
+          </div>
+
+          <div class="col-sm-4" id="burger_2">
+            <img src = "mediumBurger.jpg" class="food">
+            <p>Description: calories = 1200</p>
+            <p>Recommdaion: not for kids less than 10 years</p>
+            <p>Price: $5.00</p>
+          </div>
+
+          <div class="col-sm-4" id="burger_1">
+            <img src = "smallBurger.jpg" class="food">
+            <p>Description: calories = 700</p>
+            <p>Recommdaion: good for kids</p>
+            <p>Price: $2.50</p>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-sm-10"  id="nugget_1">
+            <img src = "nugget.jpg" class="food">
+            <p>Description: calories = 1300</p>
+            <p>Recommdaion: good for family</p>
+            <p>Price: $5.50</p>
+          </div>          
+        </div>
+
+
+        <div class="row">
+          <div class="col-sm-10" id="salad_1">
+            <img src = "salad.jpeg" class="food">
+            <p>Description: calories = 400</p>
+            <p>Recommdaion: good for family</p>
+            <p>Price: $6.50</p>
+          </div>          
+        </div>
+
+
+    </div>
+ 
+  </div>
+</div>
