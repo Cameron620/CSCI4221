@@ -1,2 +1,2 @@
 # CSCI4221
-Software Development
+Software Engineering
